@@ -1,0 +1,168 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*introdução da página*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 6px rgba(44, 44, 44, 0.247);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 9vh;
+    width: 100%;
+    z-index: 100;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu div a{
+    color: rgb(0, 0, 0);
+    padding: 0 1.5rem;
+}
+.bnt{
+    background-color: #ed5a4e;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    height: 2rem;
+    width: 9rem;
+    transition: .3s;
+}
+.bnt:hover{
+    background-color: #bb483d;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    font-size: 1.8rem;
+    color: #ed5a4e;
+    padding-right: .5rem;
+}
+.sessao-banner{
+    position: relative;
+    background-color: #f6f6f6;
+    height: 75vh;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 11rem);
+    row-gap: 1.5rem;
+    margin-top: 9vh;
+    overflow: hidden;
+}
+.img-banner{
+    background-color: #e9e9e9;
+    margin: 0 0 2rem;
+    grid-column: 6/9;
+    grid-row: 1/4;
+}
+.img-banner img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.txt-banner{
+    grid-column: 3/6;
+    grid-row: 2/3 ;
+}
+.txt-banner h1{
+    margin-bottom: 1rem;
+}
+.txt-banner h2{
+    margin-bottom: 1rem;
+}
+.txt-banner button{
+    margin-top: 1.5rem;
+    width: 6rem;
+}
+.txt-banner .bnt-artes{
+    background-color: rgba(211, 211, 211, 0);
+    color: black;
+    border: solid rgba(0, 0, 0, 0.301) 1px;
+}
+.txt-banner .bnt-artes:hover{
+    background-color: rgb(224, 207, 207);
+    border: none;
+}
+/*Conhecimentos*/
+.sessao-ferramentas{
+    margin-top: 9rem;
+}
+.header-conhecimentos h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.ferramentas{
+    margin-top: 3rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-around;
+    max-width: 75%;
+}
+.conhecimento{
+    background-color: #70babb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    row-gap: 5rem;
+    padding-left: .8rem;
+    transition: 0.3s;
+}
+/*artes*/
+.sessao-arts{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 75%;
+    margin-top: 6rem;
+}
+.arts{
+    padding-top: 3.5rem;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info:nth-child(2){
+    flex-direction: row-reverse;
+}
+.info:nth-child(4){
+    flex-direction: row-reverse;
+}
+.img-info{
+    width: 26rem;
+}
+.img-info img{
+    border-radius: 10px;
+    object-fit: cover;
+    width:100%;
+}
+.txt-info{
+    margin: 0 1.5rem;
+}
+.txt-info h2{
+    margin-bottom: 1rem;
+}
+.txt-info button{
+    margin-top: 1rem;
+    width: 6rem;
+}
+/*footer*/
