@@ -99,32 +99,35 @@ header{
 }
 /*Conhecimentos*/
 .sessao-ferramentas{
+    max-width: 75%;
     margin-top: 9rem;
-}
-.header-conhecimentos h1{
-    font-size: 2rem;
-    text-align: center;
-}
-.ferramentas{
-    margin-top: 3rem;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+}
+.header-conhecimentos h1{
+    font-size: 2rem;
+}
+.ferramentas{
+    margin-top: 3rem;
     display: flex;
-    justify-content: space-around;
-    max-width: 75%;
+    justify-content: space-between;
 }
 .conhecimento{
-    background-color: #70babb;
+    background-color: #63bec0;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 20rem;
-    height: 20rem;
+    height: 25rem;
     row-gap: 5rem;
     padding-left: .8rem;
     transition: 0.3s;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+}
+.conhecimento i{
+    font-size: 2rem;
 }
 /*artes*/
 .sessao-arts{
@@ -166,3 +169,23 @@ header{
     width: 6rem;
 }
 /*footer*/
+footer{
+    background-color: #002a30;
+    height: 25rem;
+    width: 100%;
+}
+/*animação de scroll*/
+[data-anime] {
+    opacity: 0;
+    transition: 2s;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
