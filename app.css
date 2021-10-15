@@ -53,7 +53,7 @@ header{
 .sessao-banner{
     position: relative;
     background-color: #f6f6f6;
-    height: 75vh;
+    height: 85vh;
 }
 .banner{
     display: grid;
@@ -97,13 +97,19 @@ header{
     background-color: rgb(224, 207, 207);
     border: none;
 }
+/*sobre mim*/
+.sobre-mim{
+    max-width: 75%;
+    margin: 7rem auto;
+}
+.sobre-mim h1{
+    margin-bottom: 2rem;
+}
 /*Conhecimentos*/
 .sessao-ferramentas{
     max-width: 75%;
-    margin-top: 9rem;
+    margin: 9rem auto;
     position: relative;
-    left: 50%;
-    transform: translate(-50%);
 }
 .header-conhecimentos h1{
     font-size: 2rem;
@@ -114,7 +120,8 @@ header{
     justify-content: space-between;
 }
 .conhecimento{
-    background-color: #63bec0;
+    background-color: #70abac;
+    border-radius: 4px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -127,6 +134,7 @@ header{
     text-shadow: 1px 1px rgba(0, 0, 0, 0.39);
 }
 .conhecimento i{
+    color: #f89696;
     font-size: 2rem;
 }
 /*artes*/
@@ -143,6 +151,7 @@ header{
 .info{
     display: flex;
     align-items: center;
+    margin-bottom: 3rem;
 }
 .info:nth-child(2){
     flex-direction: row-reverse;
@@ -151,12 +160,13 @@ header{
     flex-direction: row-reverse;
 }
 .img-info{
-    width: 26rem;
+    width: 33vw;
 }
 .img-info img{
     border-radius: 10px;
     object-fit: cover;
     width:100%;
+    height: 100%;
 }
 .txt-info{
     margin: 0 1.5rem;
